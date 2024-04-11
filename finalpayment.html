@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles\indexxstyles.css">
+    <link rel="stylesheet" href="styles\footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Payment Credentials</title>
+
+</head>
+<body>
+
+    <ul class="menu">
+        <li class="menu"><img src="images/creativecatalyst.png" height="70px" width="70px"></li>
+        <li class="menu" style="margin-left: 15px;"><a href="homepage.html">Home</a></li>
+        <li class="menu"><a href="user dash board.html">Dashboard</a></li>
+        <li class="menu"><a href="aboutus.html">About Us</a></li>
+        <li class="menu"><a href="Packagepage.html">Packages</a></li>
+        <li class="menu"><a href="feedback.html">Feedback</a></li>
+        <li class="menu"><a href="contactus.html">Contact Us</a></li>
+        <li class="menu"><a href="inquiry.html">Inquiry</a></li>
+    </ul>
+
+<div class="container">
+
+    <form action="PHP/paymentphp.php" method="POST">
+
+        <div class="row">
+
+            <div class="col">
+    
+                <h1 style="text-align: center; font-size: 30px;" class="title">Payment</h1>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                </div>
+                
+                
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" name="name" placeholder="Mr. John Deo" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" name="cardnum" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text"  name="expmonth"  placeholder="January" required>
+                </div>
+                
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Exp Year :</span>
+                        <input type="number" name="expyear" placeholder="2022" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" name=" cvv" placeholder="123" required>
+                    </div>
+                </div>
+        
+            
+
+       </form>
+    </div>
+
+            <input type="submit" value= "Continue" class="submit-btn" onclick="sendmail()"> 
+        
+    
+</div>
+</div>    
+    
+<footer class="footer">
+    <div class="containerf">
+        <div class="row">
+            <div class="footer-col">
+                <h4>CreativeCatalyst</h4>
+                <ul >
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get in touch with us</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contactus.html">ContactUs</a></li>
+                    <li><a href="inquiry.html">Inquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+            
+                <div class="social-links">
+                  <img src="images/creativecatalyst.png" height="200px" width="200px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</br>
+</br>
+</br>
+
+    <center>
+        <p class="copyc">&copy; CreativeCatalyst. All rights reserved.</p>
+    </center>
+</footer>
+</body>
+</html>

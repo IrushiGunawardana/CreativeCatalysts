@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/inquiries.css">
+		<link rel="stylesheet" type="text/css" href="styles/footer.css">
+
+
+		<title>Inquiries</title>
+
+	</head>
+	
+	<body>
+        <ul class="menu">
+            <li class="menu"><img src="images/creativecatalyst.png" height="70px" width="70px"></li>
+            <li class="menu" style="margin-left: 15px;"><a href="homepage.html">Home</a></li>
+            <li class="menu"><a href="user dash board.html">Dashboard</a></li>
+            <li class="menu"><a href="aboutus.html">About Us</a></li>
+            <li class="menu"><a href="Packagepage.html">Packages</a></li>
+            <li class="menu"><a href="feedback.html">Feedback</a></li>
+            <li class="menu"><a href="contactus.html">Contact Us</a></li>
+            <li class="menu"><a href="inquiry.html">Inquiry</a></li>
+        </ul>
+		
+		<h3><center>Inquiries</center></h3>	
+	
+		<br/>
+
+		<div class = "right_box">
+			<p>
+				You may easily receive the information you want by using our inquiry page. Our staff is available to help with any inquiries you may have regarding our services.
+			</p>
+	
+			<p>
+				Please fill out the form below to submit to us an inquiry. 
+				Give us as much information as you can so that we can fully understand what you want and give you accurate and timely information.
+			</p>
+		</div>
+	
+		<br/><br/><br/>
+	
+		<h1>Inquiries</h1>
+        <div class="container">
+			
+		<div class = "form">	
+            <form action = "inquiry.php" method = "POST"><br>
+                <div class="input_filed">
+                    <label for = "fullname">Full Name</label><br>
+                    <input type="text" class="input" id = "fullname" name = "fullname" required>
+                </div>
+
+				<div class="input_filed">
+                    <label for = "email">Email</label><br>
+                    <input type="text" class="input" id = "email" name = "email">
+                </div><br>
+            
+                <div class="input_filed">
+                    <label for = "inquirytype">Inquiry Type</label><br>
+                    <div class="custom_select">
+                        <select name="inquirytype">
+							<option value="">Select</option>
+							<option value="service">Service</option> 
+							<option value="campaign_planning">Campaign Planning</option> 
+							<option value="creative_concept">Creative Concept</option> 
+							<option value="campaign_performance">Campaign Performance</option> 
+							<option value="account_management">Account Management</option> 
+							<option value="other">Other</option> 
+                        </select>
+                    </div>
+                </div><br>
+               
+                <div class="input_filed">
+                    <label for = "other">If other please mention your inquiry type here</label><br>
+                    <input type="text" class="input" id = "other" name = "other">
+                </div><br>
+
+                <div class="input_filed">
+                    <label for = "message">Message</label><br>
+					<textarea name="message" id = "message" cols="107" rows="8" placeholder="Enter your message here" required>
+					</textarea>
+			    </div><br>
+            
+                <div class="input_filed">
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+        </div>
+		</div>
+
+		<script src = "form.js"></script>
+
+		<footer class="footer">
+            <div class="containerf">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>CreativeCatalyst</h4>
+                        <ul >
+                            <li><a href="AboutUs.html">About us</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get in touch with us</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contactus.html">ContactUs</a></li>
+                            <li><a href="inquiry.html">Inquiry</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col">
+                    
+                        <div class="social-links">
+                          <img src="images/creativecatalyst.png" height="200px" width="200px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <center>
+                <p class="copyc">&copy; CreativeCatalyst. All rights reserved.</p>
+            </center>
+       </footer>
+	</body>
+</html>

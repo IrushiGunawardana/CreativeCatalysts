@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Star Rating Form | CodingNepal</title>
+    <link rel="stylesheet" href="styles/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <body>
+      <ul class="menu">
+        <li class="menu"><img src="images/creativecatalyst.png" height="70px" width="70px"></li>
+        <li class="menu" style="margin-left: 15px;"><a href="homepage.html">Home</a></li>
+        <li class="menu"><a href="user dash board.html">Dashboard</a></li>
+        <li class="menu"><a href="aboutus.html">About Us</a></li>
+        <li class="menu"><a href="Packagepage.html">Packages</a></li>
+        <li class="menu"><a href="feedback.html">Feedback</a></li>
+        <li class="menu"><a href="contactus.html">Contact Us</a></li>
+        <li class="menu"><a href="inquiry.html">Inquiry</a></li>
+    </ul>
+    <h1>Feedback</h1>
+
+    <p class="phrase1">
+        
+            We appreciate your comments on our services and would want to thank you for taking the time to do so. 
+            Your feedback enables us to make improvements and guarantee that we provide each of our esteemed clients with the best possible service.
+ 
+    </p>
+   <center>
+    <div class="container">
+      <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+      </div>
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+          <header></header>
+          <div class="textarea">
+            <textarea cols="30" placeholder="Describe your experience.."></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</center>
+<br>
+<br>
+<section class="container1">
+    <div class="card">
+        <div class="card-image"><img src = "images/m1.jpg" width="180" height="150" alt="add"></div>
+        <h2>Jane Park</h2 >
+        <p>"The online advertising company provided excellent targeting options, boosting our campaign's reach. Their customer support was responsive and helpful, addressing our concerns promptly. However, the reporting dashboard could be more user-friendly and provide more comprehensive analytics"</p>
+    </div>
+
+    <div class="card">
+        <div class="card-image"><img src = "images/m2.jpg" width="180" height="150" alt="add"></div>
+        <h2>Austin Johns</h2 >
+        <p>"Outstanding results! Your team delivered exceptional campaign performance, driving high-quality traffic and boosting our sales. Professional, responsive, and highly recommended for online advertising needs."</p>
+    </div>
+
+    <div class="card">
+        <div class="card-image"><img src = "images/m3.jpg" width="180" height="150" alt="audience"></div>
+        <h2>Anderson Park</h2 >
+        <p>"Great results! Increased website traffic, higher conversions, and excellent ROI. Impressed with the targeting and campaign optimization. Highly recommend your online advertising services!"</div>
+</section>
+
+
+    <script>
+      const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+        }
+        return false;
+      }
+    </script>
+
+  </body>
+</html>   
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Details</title>
+        <link rel="stylesheet" type="text/css" href="styles/adddetails1.css"> 
+        <script type="text/javascript" src="script/addjs.js"></script>  
+    </head>
+    <body>
+        <ul class="menu">
+            <li class="menu"><img src="images/creativecatalyst.png" height="70px" width="70px"></li>
+            <li class="menu" style="margin-left: 15px;"><a href="homepage.html">Home</a></li>
+            <li class="menu"><a href="dashboard.html">Dashboard</a></li>
+            <li class="menu"><a href="aboutus.html">About Us</a></li>
+            <li class="menu"><a href="Packagepage.html">Packages</a></li>
+            <li class="menu"><a href="feedback.html">Feedback</a></li>
+            <li class="menu"><a href="contactus.html">Contact Us</a></li>
+            <li class="menu"><a href="inquiry.html">Inquiry</a></li>
+        </ul>
+        <h1>Add Details</h1>
+        <div class="container">
+              <form action="silveradd.php" method="POST">
+
+                <div class="input_filed">
+                    <label>Company Name</label><br>
+                    <input type="text" id="companyname" name="companyname" placeholder="Enter Company name.." >
+                </div>
+               
+                <div class="input_filed">
+                    <label>Addvertisement Type</label><br>
+                    <div class="custom_select" >
+                        <select name="selectadd">
+                            <option value="">Select</option>
+                            <option value="videos">Video</option>
+                            <option value="Post">Post</option>
+                            <option value="Article">Article</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input_filed">
+                    <label>Target Audience</label><br>
+                    <input type="text" id="targetaudience" name="targetaudience" placeholder="Target Audience...." >
+                </div>
+               
+               
+                <div class="input_filed">
+                    <label>Key Message</label><br>
+                    <input type="text" id="keym" name="keym" placeholder="Enter Key Message...." >
+                </div>
+                <div class="input_filed">
+                    <label>Visual Assests</label><br>
+                    <input type="file" id="filem">
+                </div>
+
+                <div class="input_filed">
+                    <label>Contact Number</label><br>
+                    <input type="text" id="contactnumber" name="contactnumber" placeholder="Contact Number" >
+                </div>
+                
+                <div class="input_filed">
+                    <label>Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter Email...." >
+                </div>
+                <div class="input_filed">
+                    <label>Due Date</label><br>
+                    <input type="date" id="ddate" name="ddate" >
+                </div>
+                <br>
+                <div class="input_filed">
+                    <input type="submit" value="Submit" class="btn" onclick="handleSubmit()"/>
+                </div>
+
+            
+
+        </form>
+
+        </div>
+
+
+    </body>
+</html>

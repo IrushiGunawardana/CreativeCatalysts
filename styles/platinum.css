@@ -1,0 +1,39 @@
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  li.menu {
+    float: left;
+  }
+  
+  li a {
+     
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  
+  li a:hover {
+    background-color: rgb(55, 151, 162);
+  }
+  body{
+    background-color: black;
+    color:white;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      .platinumpackage{
+        color:slategray;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }

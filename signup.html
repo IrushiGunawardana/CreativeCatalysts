@@ -1,0 +1,41 @@
+<DOCTYPE html>
+    <head>
+        <title>Signup page</title>
+        <link rel="stylesheet" href="styles/signup.css">
+    </head>
+    <body id="header">
+        <ul class="menu">
+            <li class="menu"><img src="images/creativecatalyst.png" height="70px" width="70px"></li>
+            <li class="menu" style="margin-left: 15px;"><a href="homepage.html">Home</a></li>
+            <li class="menu"><a href="Dashboard.lk">Dashboard</a></li>
+            <li class="menu"><a href="aboutus.html">About Us</a></li>
+            <li class="menu"><a href="Packages.lk">Packages</a></li>
+            <li class="menu"><a href="feedback.lk">Feedback</a></li>
+            <li class="menu"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+c
+        <div class="button">
+            <a href="login.html"><button class="btn" style="margin-left: 295px;">Login</button></a>
+            <a href="signup.html"><button class="btn">Signup</button></button></a>
+        </div>
+        <h1>Sign up</h1>
+        <div class="card-container">
+            <div class="card">
+                 <div class="card-text">
+                    <center>
+                    <form name="myForm" action="signup.php" method="post">
+                        <input type="text" name="fname" id="fname" class="input-box" placeholder="First Name"><br>
+                        <input type="text" name="lname" id="lname" class="input-box" placeholder="Last Name"><br>
+                        <input type="email" name="email" id="email" class="input-box" placeholder="Email"><br>
+                        <input type="text" name="pnumber" id="pnumber" class="input-box" placeholder="Contact Number"><br>
+                        <input type="password" name="pass" id="pass" class="input-box" placeholder="Password"><br>
+                        <input type="password" name="cpass" id="cpass" class="input-box" placeholder="Confirm Password">
+                        <button class="submit">Sign Up</button>
+                    </form>
+                    </center>
+                 </div>
+            </div>
+        </div>
+        <center><h2 style="font-weight: 200; margin-bottom: 40PX;">Already have an account?   <a href="login.html" class="link">Log In</a></h2></center>
+    </body>
+</html>
